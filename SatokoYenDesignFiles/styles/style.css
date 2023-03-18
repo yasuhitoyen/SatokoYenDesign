@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+:root {
+	--orange: #ff7a00
+}
+
+* {
+	font-family:'Exo 2', sans-serif;
+	margin:0; padding:0;
+	box-sizing: .2s linear;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	overflow-x: hidden;
+}
+
+.header {
+	top: 0;
+	position: sticky;
+	height: 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background-color: white;
+	z-index: 100;
+	padding: 1rem 2rem;
+	box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
+}
+.header #logo{
+	max-width: 100%;
+	width: 4rem; height: 4rem;
+}
+
+.header nav ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0; padding: 0;
+}
+.header nav ul li {
+	font-size: 1.5rem;
+	padding-left: 5rem; padding-right: 5rem;
+}
+
+.header nav ul li a{
+	color: rgb(114, 114, 114);
+}
+.header nav ul li a:hover{
+	color: rgb(44, 44, 44);
+	text-decoration: none;
+}
+.header .fa-bars{
+	font-size: 2.5rem;
+	color: rgb(50, 50, 50);
+	cursor: pointer;
+	display: block;
+}
+#home {
+	min-height:80vh;
+	background: url("../images/mainimage.jpg") no-repeat;
+	background-size: cover;
+	display: flex;
+	text-align: center;
+}
+#home h1{
+	margin-top: 2rem;
+	margin-left: 2rem;
+	padding: 1rem;
+	font-size: 350%;
+	background-color: #fff;
+	opacity: 65%;
+	border-radius: 1rem;
+}
+#home h3{
+	margin-left: 2rem;
+	padding: 1rem;
+	background-color: #fff;
+	opacity: 65%;
+	border-radius: 1rem;
+}
+
+#homeimage h1{
+	display: block;
+	text-align: center;
+}
+#homeimage h3{
+	display: block;
+	text-align: center;
+}
+/*About page*/
+#about{
+	height: 70vh;
+	background-image: url("../images/marble.jpg");
+	background-size: cover;
+}
+#about .column{
+	float: left;
+	width: calc(100vw/3);
+	height: 70vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background: rgba(0, 0, 0, 0);
+	
+}
+#about #leftcolumn{
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+
+}
+#about #rightcolumn{
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+
+}
+#about #title{
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 5rem;
+	text-decoration: none;
+}
+#about #text{
+	padding-right: 5rem;
+	padding-left: 5rem;
+
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+#services{
+	height: 90vh;
+	background-image: url("../images/backck.jpeg");
+	background-size: cover;
+}
+#services h1{
+	text-align: center;
+	padding-top: 40px;
+	font-size: 70px;
+	color: rgb(214, 199, 122);
+}
+#services li {
+	list-style-type: none;
+	margin-left: 50px;
+}
+#services li h2{
+	margin-top: 30px;
+	color: rgb(204, 198, 166);
+	font-size: 40px;
+
+	font-style: oblique;
+}
+#services li h3{
+	color: rgb(227, 220, 186);
+	font-style: oblique;
+	font-size: 30px;
+
+}
